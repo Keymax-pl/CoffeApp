@@ -1,0 +1,19 @@
+.imgs {
+  position: absolute;
+  z-index: 0;
+}
+
+.logo {
+  position: relative;
+  color: white;
+  display: inline-block;
+}
+
+.nav-wrapper {
+  display: inline-block;
+  position: relative;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
