@@ -1,19 +1,32 @@
-.imgs {
-  position: absolute;
-  z-index: 0;
-}
-
-.logo {
+.header {
   position: relative;
-  color: white;
-  display: inline-block;
+  color: white; /* Ustaw kolor tekstu */
+  height: 900px;
+  width: 100%;
+  overflow: hidden; /* Ukryj treść, która może wystawać poza obszar */
+
+  .backgurnd-image {
+    img{
+      position: absolute;
+      height: 100%; /* Ustaw wysokość obrazu na 100% nagłówka */
+      width: 100%; /* Ustaw szerokość obrazu na 100% nagłówka */
+      top: 0;
+      left: 0;
+      object-fit: cover; /* Dopasuj obraz do wymiarów bez zniekształceń */
+    }
+  }
 }
 
 .nav-wrapper {
-  display: inline-block;
-  position: relative;
-  a {
-    text-decoration: none;
-    color: white;
+  position: absolute;
+  display: flex;
+
+  ul{
+    display: flex;
   }
+
+  li{
+    text-decoration: none;
+  }
+
 }
