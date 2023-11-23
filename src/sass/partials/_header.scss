@@ -1,32 +1,116 @@
-.header {
+.hero-section {
   position: relative;
   color: white; /* Ustaw kolor tekstu */
-  height: 900px;
+  height: 1200px;
   width: 100%;
-  overflow: hidden; /* Ukryj treść, która może wystawać poza obszar */
+  overflow: hidden;
+  background: linear-gradient(
+    rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('/images/background.png') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
 
-  .backgurnd-image {
-    img{
-      position: absolute;
-      height: 100%; /* Ustaw wysokość obrazu na 100% nagłówka */
-      width: 100%; /* Ustaw szerokość obrazu na 100% nagłówka */
-      top: 0;
-      left: 0;
-      object-fit: cover; /* Dopasuj obraz do wymiarów bez zniekształceń */
-    }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//lOGO
+
+.logo {
+  text-decoration: none;
+  color: $color-main;
+  font-weight: $font-bold;
+  font-size: 40px;
+  word-spacing: 10px;
+  letter-spacing: 10px;
+
+  p {
+    font-size: 20px;
+    margin: 0;
+    word-spacing: 0;
+    letter-spacing: 4px;
   }
 }
 
-.nav-wrapper {
-  position: absolute;
-  display: flex;
+//NAVIGATION
 
-  ul{
+.nav-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-size: 24px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
     display: flex;
   }
 
-  li{
-    text-decoration: none;
+  li {
+    margin-right: 10px;
   }
 
+  a {
+    color: $color-main;
+    text-decoration: none;
+    opacity: 0.5;
+    padding: 10px;
+
+    &:hover {
+      opacity: 1;
+      transition: 0.5;
+    }
+  }  
+}
+
+//TITLE
+
+.title-website {
+  padding: 30px 19%;
+  font-weight: 900;
+  font-size: 65px;
+  word-spacing: 10px;
+  letter-spacing: 20px;
+  color: $color-addons;
+
+  .title {
+    margin-bottom: -65px;
+  }
+
+  .title-org {
+    text-align: end;
+    margin-top: -80px;
+  }
+
+  &::after {
+    content: "";
+    background-color: $color-addons;
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 8px;
+    width: 13%;
+  }
+}
+
+.discover {
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 13px;
+  font-weight: 400;
+  flex-direction: column;
+  
+  p {
+    margin: 240px 0 0 0;
+  }
+}
+
+.icon-arrow {
+  font-size: 60px;
 }
