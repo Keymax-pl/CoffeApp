@@ -39,19 +39,19 @@
           <div id="home-wrapper" class="home-wrapper container">
             <div class="about-us">
               <h2 class="home-title">ABOUT US</h2>
-              <p>Who are we? Just a bunch of friends width
+              <p class="home-description">Who are we? Just a bunch of friends width
                  a love for a good coffe and desire to create
                  something new, something original.
               </p>
-              <p>Our coffees reflect us - young, wild and free.
+              <p class="home-description">Our coffees reflect us - young, wild and free.
                 We are on the journey of new tastes...
               </p>
-              <p>Join us!</p>
+              <p class="join-us">Join us!</p>
             </div>
-            <footer>
-              <p>&copy; 2023 EL TIGRE inc.</p>
-            </footer>
           </div>
+          <footer class="footer">
+            <p>&copy; 2023 EL TIGRE inc.</p>
+          </footer>
         </section>
         <section id="products">
           <div id="product-list" class="product-list container"></div>
@@ -63,26 +63,25 @@
       <script id="template-product" type="text/x-handlebars-template">
         <article class ="article-products">
           <div class="row">
-              <div class="col-sm-6 col-xs-12 column">
-                  <div class="text-products">
-                      <h1 class="product-title">{{ id }} {{ name }}</h1>
-                      <div class="products-description">
-                          <p>{{ description }}</p>
-                      </div>
-                      <ul class="product-value">
-                          <li>ROASTING: <span>{{ roasting }}</span></li>
-                          
-                          <li>INTENSITY: <span>{{ intensity }}</span></li>
-                      </ul>
+            <div class="col-sm-6 col-xs-12 column">
+                <div class="text-products">
+                  <h1 class="product-title">{{ id }} {{ name }}</h1>
+                  <div class="products-description">
+                  <p>{{ description }}</p>
                   </div>
+                  <ul class="product-value">
+                    <li>ROASTING: <span>{{ roasting }}</span></li>
+                    <li>INTENSITY: <span>{{ intensity }}</span></li>
+                  </ul>
+                </div>
               </div>
-              <div class="col-sm-6 col-xs-12 column">
-                  <div class="product-img">
-                      {{{ images }}}
-                  </div>
+            <div class="col-sm-6 col-xs-12 column">
+              <div class="product-img">
+                {{{ images }}}
               </div>
+            </div>
           </div>
-      </article>
+        </article>
       </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
       <script src="js/app.js" type="module"></script>

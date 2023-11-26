@@ -1,15 +1,55 @@
-#home {
-    background-image: url('/images/about-us.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.contrainer {
-  margin: 100%;
-  padding: 100%;
+// About 
+.home-wrapper {
+    margin: 0;
+    padding: 0;
 }
 
 .about-us {
+  background: linear-gradient(
+    rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('/images/about-us.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 80px 0 80px;
+}
 
+.home-title {
+  text-align: center;
+  color: $color-addons;
+  font-size: 100px;
+  letter-spacing: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1530px;
+    left: 25%;
+    width: 50%;
+    height: 10px; 
+    background-color: $color-addons;
+  }
+}
+  
+.home-description {
+  text-align: left;
+  color: $color-main;
+  font-weight: 700;
+  font-size: 45px;
+  padding: 0 29% 0 25%;
+}
+  
+.join-us {
+  text-align: end;
+  padding-right: 20%;
+  margin-top: -70px;
+  color: $color-main;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 20px;
 }
