@@ -16,12 +16,12 @@
           </a>
           <nav class="nav-wrapper">
             <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#products">PRODUCTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#home" class="nav-links">HOME</a></li>
+            <li><a href="#products" class="nav-links">PRODUCTS</a></li>
+            <li><a href="#contact" class="nav-links">CONTACT</a></li>
           </ul>
           </nav>
-        </div>  
+        </div>
         <header>
           <div class="title-website">
             <h1 class="title">HOME OF</h1>
@@ -33,6 +33,57 @@
           </div>
         </header>
       </section>
+      <div id="pages">
+        <section id="
+        ">
+          <div id="home-wrapper" class="home-wrapper container">
+            <div class="about-us">
+              <h2 class="home-title">ABOUT US</h2>
+              <p>Who are we? Just a bunch of friends width
+                 a love for a good coffe and desire to create
+                 something new, something original.
+              </p>
+              <p>Our coffees reflect us - young, wild and free.
+                We are on the journey of new tastes...
+              </p>
+              <p>Join us!</p>
+            </div>
+            <footer>
+              <p>&copy; 2023 EL TIGRE inc.</p>
+            </footer>
+          </div>
+        </section>
+        <section id="products">
+          <div id="product-list" class="product-list container"></div>
+        </section>
+        <section id="contact">
+          <div class="contact-wrapper container"></div>
+        </section>
+      </div>
+      <script id="template-product" type="text/x-handlebars-template">
+        <article class ="article-products">
+          <div class="row">
+              <div class="col-sm-6 col-xs-12 column">
+                  <div class="text-products">
+                      <h1 class="product-title">{{ id }} {{ name }}</h1>
+                      <div class="products-description">
+                          <p>{{ description }}</p>
+                      </div>
+                      <ul class="product-value">
+                          <li>ROASTING: <span>{{ roasting }}</span></li>
+                          
+                          <li>INTENSITY: <span>{{ intensity }}</span></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-sm-6 col-xs-12 column">
+                  <div class="product-img">
+                      {{{ images }}}
+                  </div>
+              </div>
+          </div>
+      </article>
+      </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
       <script src="js/app.js" type="module"></script>
     </body>
