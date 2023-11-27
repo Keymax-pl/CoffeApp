@@ -1,5 +1,5 @@
-import { select,templates } from "./settings";
-import utils from "./utils";
+import { select,templates } from './settings.js';
+import utils from './utils.js';
 
 class Product {
   constructor(id, data){
@@ -21,3 +21,5 @@ class Product {
     productContrainer.appendChild(thisProduct.element);
   }
 }
+
+export default Product;

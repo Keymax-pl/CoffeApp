@@ -1,4 +1,5 @@
-import { settings, select, classNames } from './settings.js'
+import { settings, select, classNames } from './settings.js';
+import Product from './Product.js';
 const app = {
 
   initPages: function(){
@@ -38,12 +39,10 @@ const app = {
   activatePage: function(pageId){
     const thisApp = this;
 
-    /* add class "active" to matching pages, remove from non-matching */
     for(let page of thisApp.pages){
-      page.classList.toggle(classNames.pages.active, page.id == pageId)
+      page.classList.toggle(classNames.pages.active, page.id == pageId);
     }
 
-    /* add class "active" to matching links, remove from non-matching */
     for(let link of thisApp.navLinks){
       link.classList.toggle(
         classNames.nav.active,
@@ -62,6 +61,13 @@ const app = {
       .then((parsedResponse) => {
         this.data.products = parsedResponse;
       });
+  },
+
+  initProduct() {
+    const thisApp = this;
+
+    const productElement = document.querySelector(select.containerOf.listProduct);
+    thisApp.product = new Product(productElement);
   },
 
   init: function() {
