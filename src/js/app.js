@@ -52,6 +52,10 @@ const app = {
   },
 
   initData: function() {
+    const thisApp = this;
+
+    console.log(thisApp);
+
     const url = settings.db.url + '/' + settings.db.products;
     this.data = {};
     fetch(url)
@@ -60,14 +64,16 @@ const app = {
       })
       .then((parsedResponse) => {
         this.data.products = parsedResponse;
+        thisApp.initProducts();
       });
   },
 
-  initProduct() {
+  initProducts: function() {
     const thisApp = this;
-
-    const productElement = document.querySelector(select.containerOf.listProduct);
-    thisApp.product = new Product(productElement);
+  
+    for (let productData of thisApp.data.products) {
+      new Product(productData.id, productData).renderProducts();
+    }
   },
 
   init: function() {
