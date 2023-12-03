@@ -5,3 +5,83 @@
 #pages > section.active {
   display: block;
 }
+
+.container {
+  flex-wrap: wrap;
+}
+
+.article-products {
+  width: 100%;
+  padding: 50px 0 50px 0;
+
+  &:nth-child(2n) .row {
+    flex-direction: row-reverse;
+  }
+}
+
+.product-list {
+  justify-content: center;
+}
+
+.products-title {
+  text-align: center;
+  color: $color-addons;
+  margin-top: auto;
+  
+  
+  &::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 10px;
+    background-color: $color-addons;
+    margin-bottom: 20px;
+  }
+}
+
+.product-title {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+
+.products-description {
+  display: flex;
+  flex-wrap: nowrap;
+
+
+  p {
+    margin-top: -17px;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    bottom: 100px;
+    width: 50%;
+    height: 6px;
+    margin-right: 20px;
+    background-color: $color-addons;
+    transform: translateY(-50%);
+  }
+}
+.description-text {
+  padding-right: 150px;
+}
+
+.product-value {
+  list-style: none;
+  font-weight: 700;
+  font-size: 25px;
+  span{
+    color: $color-addons;
+  }
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 30px black;
+  
+}

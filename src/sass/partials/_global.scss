@@ -4,10 +4,16 @@
   
 body {
   margin: 0;
-  font-size: 14px;
   line-height: 1.7;
   background-color: $color-main;
   font-family: $font-text;
+  font-size: 20px;
 }
 
+.subtitle {
+  letter-spacing: 20px;
+  font-weight: 700;
+  font-size: 100px;
+  padding-top: 150px;
+}
   

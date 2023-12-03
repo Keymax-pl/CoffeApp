@@ -4,7 +4,8 @@ export const select = {
   },
   containerOf: {
     pages: '#pages',
-    listProduct: '#product-list',  
+    listProduct: '#product-list',
+    homeProducts: '.products-container',
   },
   nav: {
     links: '.nav-links',

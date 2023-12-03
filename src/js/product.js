@@ -14,11 +14,17 @@ class Product {
 
     const generatedHTML = templates.Product(thisProduct.data);
 
-    thisProduct.element = utils.createDOMFromHTML (generatedHTML);
+    thisProduct.element1 = utils.createDOMFromHTML (generatedHTML);
 
-    const productContrainer = document.querySelector(select.containerOf.listProduct);
+    thisProduct.element2 = utils.createDOMFromHTML (generatedHTML);
 
-    productContrainer.appendChild(thisProduct.element);
+    const productContrainer1 = document.querySelector(select.containerOf.listProduct);
+
+    const productContrainer2 = document.querySelector(select.containerOf.homeProducts);
+
+    productContrainer1.appendChild(thisProduct.element1);
+
+    productContrainer2.appendChild(thisProduct.element2);
   }
 }
 

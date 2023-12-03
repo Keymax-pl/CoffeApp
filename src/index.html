@@ -36,40 +36,50 @@
       <div id="pages">
         <section id="home" class="home-page page">
           <div id="home-wrapper" class="home-wrapper container">
-            <div class="about-us">
-              <h2 class="home-title">ABOUT US</h2>
-              <p class="home-description">Who are we? Just a bunch of friends width
-                 a love for a good coffe and desire to create
-                 something new, something original.
-              </p>
-              <p class="home-description">Our coffees reflect us - young, wild and free.
-                We are on the journey of new tastes...
-              </p>
-              <p class="join-us">Join us!</p>
-            </div>
+            <h2 class="products-title subtitle">Products</h2>
+            <div class="products-container"></div>
+          </div>
+          <div class="about-us">
+            <h2 class="home-title subtitle">ABOUT US</h2>
+            <p class="home-description">Who are we? Just a bunch of friends width
+              a love for a good coffe and desire to create
+              something new, something original.
+            </p>
+            <p class="home-description">Our coffees reflect us - young, wild and free.
+              We are on the journey of new tastes...
+            </p>
+            <p class="join-us">Join us!</p>
           </div>
           <footer class="footer">
             <p>&copy; 2023 EL TIGRE inc.</p>
           </footer>
         </section>
         <section id="products">
-          <div id="product-list" class="product-list container"></div>
+          <div id="product-list" class="product-list container">
+            <h2 class="products-title subtitle">Products</h2>
+          </div>
+          <footer class="footer">
+            <p>&copy; 2023 EL TIGRE inc.</p>
+          </footer>
         </section>
         <section id="contact">
           <div class="contact-wrapper container">
-            <div class="contact-title">
+            <div class="contact-title subtitle">
               <h2>CONTACT US</h2>
             </div>
             <form  id="form" class="login-form">
               <label for="name">NAME</label>
-                <input type="text" id="name">
+                <input class="input" type="text" id="name">
               <label for="title">TITLE</label>
-                <input type="text" id="title-form">
+                <input class="input" type="text" id="title-form">
               <label for="message">MESSAGE</label>
-                <input type="text" id="message">
-              <button type="submit">SUBMIT</button>
+              <textarea class="input message" rows="4" cols="40" placeholder="" maxlength="300"></textarea>
+              <button class="bnt" type="submit">SUBMIT</button>
             </form>
           </div>
+          <footer class="footer">
+            <p>&copy; 2023 EL TIGRE inc.</p>
+          </footer>
         </section>
       </div>
       <script id="template-product" type="text/x-handlebars-template">
@@ -79,7 +89,7 @@
                 <div class="text-products">
                   <h1 class="product-title">{{ id }} {{ name }}</h1>
                   <div class="products-description">
-                  <p>{{ description }}</p>
+                  <p class="description-text">{{ description }}</p>
                   </div>
                   <ul class="product-value">
                     <li>ROASTING: <span>{{ roasting }}</span></li>
