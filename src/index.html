@@ -14,12 +14,25 @@
             EL TIGRE
             <p>VENEZUELA COFFEE BEANS</p>
           </a>
-          <nav class="nav-wrapper">
-            <ul>
-            <li><a href="#home" class="nav-links">HOME</a></li>
-            <li><a href="#products" class="nav-links">PRODUCTS</a></li>
-            <li><a href="#contact" class="nav-links">CONTACT</a></li>
-          </ul>
+          <nav class="navbar nav-wrapper navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-links" href="#home">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-links" href="#products">PRODUCTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-links" href="#contact">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </nav>
         </div>
         <header>
@@ -85,7 +98,7 @@
       <script id="template-product" type="text/x-handlebars-template">
         <article class ="article-products">
           <div class="row">
-            <div class="col-sm-6 col-xs-12 column">
+            <div class="col-xl-6 col-lg-12 column">
                 <div class="text-products">
                   <h1 class="product-title">{{ id }} {{ name }}</h1>
                   <div class="products-description">
@@ -97,7 +110,7 @@
                   </ul>
                 </div>
               </div>
-            <div class="col-sm-6 col-xs-12 column">
+            <div class="col-xl-6 col-lg-12 column">
               <div class="product-img">
                 {{{ images }}}
               </div>

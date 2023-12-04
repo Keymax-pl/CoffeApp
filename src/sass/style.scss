@@ -7,6 +7,7 @@
 @import "bootstrap/mixins";
 @import "bootstrap/utilities";
 @import "bootstrap/grid";
+@import "bootstrap/navbar";
 
 // common styles
 @import 'partials/variables';
@@ -15,6 +16,7 @@
 @import 'partials/typography';
 @import 'partials/icons';
 @import 'partials/header';
+@import 'partials/media';
 @import 'pages/home';
 @import 'pages/contact';
 @import 'pages/products';
