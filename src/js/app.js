@@ -1,5 +1,5 @@
 import { settings, select, classNames } from './settings.js';
-import Product from './Product.js';
+import Product from './product.js';
 const app = {
 
   initPages: function(){
