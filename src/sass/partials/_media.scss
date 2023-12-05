@@ -7,6 +7,7 @@
 
   .subtitle {
     font-size: 50px;
+    letter-spacing: 5px;
   }
 
   //header
@@ -15,7 +16,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 35px;
+    letter-spacing: 5px;
+    font-size: 30px;
 
     .title {
       text-align: center;
@@ -23,10 +25,9 @@
     }
 
     .title-org {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      align-items: center;
+      padding-top: 20px;
+      text-align: center;
+      line-height: 1;
     }
 
     &::after {
@@ -46,6 +47,7 @@
   .navbar {
     display: flex;
     text-align: left;
+    font-size: 20px;
     
   }
 
@@ -59,27 +61,34 @@
     text-align: center;
   }
 
-  .description-text {
-    padding-right: 1000px;
-  }
-
   .products-title.subtitle {
     &::after {
-      width: 450px;
+      width: 400px;
+    }
+  }
+
+  .products-description {
+    &:before {
+      display: none;
     }
   }
 
   //home
 
-  .about-us {
-    top: 0;
+  .about-us p {
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+  }
 
-    p {
-      font-size: 24px;
-    }
+  .home-description {
+    margin-bottom: 90px;
+   
   }
 
   .home-title.subtitle{
+    padding: 0;
+
     &::after {
       width: 90%;
     }
@@ -104,5 +113,9 @@
     padding: 0;
     width: 50%;
     height: 50%;
+  }
+
+  .row {
+    --bs-gutter-x: 0;
   }
 }

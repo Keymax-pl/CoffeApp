@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffe</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+    <body>
+      <section class="hero-section">
+        <div class="container">
+          <a class="logo" href="#home">
+            EL TIGRE
+            <p>VENEZUELA COFFEE BEANS</p>
+          </a>
+          <nav class="navbar nav-wrapper navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-links" href="#home">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-links" href="#products">PRODUCTS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-links" href="#contact">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <header>
+          <div class="title-website">
+            <h1 class="title">HOME OF</h1>
+            <h1 class="title-org">ORIGINAL TASTES</h1>
+          </div>
+          <div class="discover">
+            <p>DISCOVER</p>
+            <i class="icon-arrow"></i>
+          </div>
+        </header>
+      </section>
+      <div id="pages">
+        <section id="home" class="home-page page">
+          <div id="home-wrapper" class="home-wrapper container">
+            <h2 class="products-title subtitle">Products</h2>
+            <div class="products-container"></div>
+          </div>
+          <div class="about-us">
+            <h2 class="home-title subtitle">ABOUT US</h2>
+            <p class="home-description">Who are we? Just a bunch of friends width
+              a love for a good coffe and desire to create
+              something new, something original.
+            </p>
+            <p class="home-description">Our coffees reflect us - young, wild and free.
+              We are on the journey of new tastes...
+            </p>
+            <p class="join-us">Join us!</p>
+          </div>
+          <footer class="footer">
+            <p>&copy; 2023 EL TIGRE inc.</p>
+          </footer>
+        </section>
+        <section id="products">
+          <div id="product-list" class="product-list container">
+            <h2 class="products-title subtitle">Products</h2>
+          </div>
+          <footer class="footer">
+            <p>&copy; 2023 EL TIGRE inc.</p>
+          </footer>
+        </section>
+        <section id="contact">
+          <div class="contact-wrapper container">
+            <div class="contact-title subtitle">
+              <h2>CONTACT US</h2>
+            </div>
+            <form  id="form" class="login-form">
+              <label for="name">NAME</label>
+                <input class="input" type="text" id="name">
+              <label for="title">TITLE</label>
+                <input class="input" type="text" id="title-form">
+              <label for="message">MESSAGE</label>
+              <textarea class="input message" rows="4" cols="40" placeholder="" maxlength="300"></textarea>
+              <button class="bnt" type="submit">SUBMIT</button>
+            </form>
+          </div>
+          <footer class="footer">
+            <p>&copy; 2023 EL TIGRE inc.</p>
+          </footer>
+        </section>
+      </div>
+      <script id="template-product" type="text/x-handlebars-template">
+        <article class ="article-products">
+          <div class="row">
+            <div class="col-xl-6 col-lg-12 column">
+                <div class="text-products">
+                  <h1 class="product-title">{{ id }} {{ name }}</h1>
+                  <div class="products-description">
+                  <p class="description-text">{{ description }}</p>
+                  </div>
+                  <ul class="product-value">
+                    <li>ROASTING: <span>{{ roasting }}</span></li>
+                    <li>INTENSITY: <span>{{ intensity }}</span></li>
+                  </ul>
+                </div>
+              </div>
+            <div class="col-xl-6 col-lg-12 column">
+              <div class="product-img">
+                {{{ images }}}
+              </div>
+            </div>
+          </div>
+        </article>
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+      <script src="js/app.js" type="module"></script>
+    </body>
+</html>
