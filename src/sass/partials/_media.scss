@@ -53,7 +53,7 @@
     font-size: 30px;
   }
 
-//Produts
+  //Produts
 
   .article-products {
     text-align: center;
@@ -64,13 +64,12 @@
   }
 
   .products-title.subtitle {
-
     &::after {
       width: 450px;
     }
   }
 
-//home
+  //home
 
   .about-us {
     top: 0;
@@ -86,7 +85,7 @@
     }
   }
 
-//Contact
+  //Contact
 
   .contact-title.subtitle {
     font-size: 30px;
